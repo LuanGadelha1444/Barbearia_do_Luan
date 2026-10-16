@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia do Luan</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+
+  
+  <header class="topo">
+    <div class="conteudo topo-conteudo">
+      <a href="#inicio" class="logo">Barbearia <span>do Luan</span></a>
+
+      <nav class="menu" id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#agendar">Agendar</a>
+        <a href="#localizacao">Localização</a>
+      </nav>
+
+      <button class="botao-menu" id="botao-menu">☰</button>
+    </div>
+  </header>
+
+  <section class="banner" id="inicio">
+    <div class="banner-texto conteudo">
+      <p class="aviso">Aberto de terça a domingo</p>
+      <h1>Estilo não se compra.<br>Se <span>constrói</span>.</h1>
+      <p class="subtitulo">
+        Corte, barba e cuidado num só lugar. Agende seu horário
+        em menos de 1 minuto, direto pelo WhatsApp.
+      </p>
+      <a href="#agendar" class="botao">Agendar agora</a>
+    </div>
+  </section>
+
+  <section class="secao" id="servicos">
+    <div class="conteudo">
+      <h2 class="titulo-secao">Nossos <span>Serviços</span></h2>
+      <p class="subtitulo-secao">Valores justos, atendimento de qualidade.</p>
+
+      <div class="grade-servicos">
+
+        <div class="card-servico">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80" alt="Barbeiro cortando o cabelo de um cliente">
+          <h3>Corte Simples</h3>
+          <p>Máquina, tesoura e finalização na navalha.</p>
+          <div class="preco">R$ 35</div>
+        </div>
+
+        <div class="card-servico">
+          <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=800&q=80" alt="Corte com degradê sendo finalizado">
+          <h3>Corte + Barba</h3>
+          <p>O combo clássico: corte completo e barba na navalha.</p>
+          <div class="preco">R$ 50</div>
+        </div>
+
+        <div class="card-servico">
+          <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&q=80" alt="Barba sendo aparada com navalha">
+          <h3>Barba na Toalha Quente</h3>
+          <p>Barba feita com toalha quente e produtos hidratantes.</p>
+          <div class="preco">R$ 30</div>
+        </div>
+
+        <div class="card-servico">
+          <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=800&q=80" alt="Interior de barbearia com cadeiras">
+          <h3>Corte Infantil</h3>
+          <p>Para os pequenos de até 10 anos, com paciência e carinho.</p>
+          <div class="preco">R$ 30</div>
+        </div>
+
+        <div class="card-servico">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&q=80" alt="Barbeiro trabalhando">
+          <h3>Pezinho</h3>
+          <p>Só a nuca e a linha do pente entre cortes.</p>
+          <div class="preco">R$ 15</div>
+        </div>
+
+        <div class="card-servico destaque">
+          <img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=800&q=80" alt="Cliente satisfeito na barbearia">
+          <h3>Combo Completo</h3>
+          <p>Corte + barba + sobrancelha. Saia renovado da cadeira.</p>
+          <div class="preco">R$ 60</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="galeria">
+    <div class="conteudo">
+      <h2 class="titulo-secao">Nossa <span>Galeria</span></h2>
+      <p class="subtitulo-secao">Um pouco do nosso espaço e do nosso trabalho.</p>
+
+      <div class="grade-galeria">
+        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80" alt="Cliente fazendo a barba">
+        <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=800&q=80" alt="Interior da barbearia">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80" alt="Detalhe de corte sendo feito">
+        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=800&q=80" alt="Cliente no momento do corte">
+      </div>
+    </div>
+  </section>
+
+  <section class="secao fundo-escuro" id="agendar">
+    <div class="conteudo">
+
+      <h2 class="titulo-secao">Faça seu <span>Agendamento</span></h2>
+      <p class="subtitulo-secao">
+        Preencha os dados abaixo e o agendamento chega direto no nosso WhatsApp.
+      </p>
+
+      <form class="form-agendamento" id="formulario" novalidate>
+
+        <div class="campo">
+          <label for="nome">Seu nome *</label>
+          <input type="text" id="nome" placeholder="Ex: João da Silva">
+        </div>
+
+        <div class="campo">
+          <label for="whatsapp">Seu WhatsApp *</label>
+          <input type="tel" id="whatsapp" placeholder="(85) 99999-9999" maxlength="15">
+          <small>Só para confirmarmos o horário com você.</small>
+        </div>
+
+        <div class="campo">
+          <label for="servico">Serviço *</label>
+          <select id="servico">
+            <option value="">— Escolha um serviço —</option>
+            
+            <option value="Corte Simples|35">Corte Simples — R$ 35</option>
+            <option value="Corte + Barba|50">Corte + Barba — R$ 50</option>
+            <option value="Barba na Toalha Quente|30">Barba na Toalha Quente — R$ 30</option>
+            <option value="Corte Infantil|30">Corte Infantil — R$ 30</option>
+            <option value="Pezinho|15">Pezinho — R$ 15</option>
+            <option value="Combo Completo|60">Combo Completo — R$ 60</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="profissional">Profissional</label>
+          <select id="profissional">
+            <option value="Qualquer profissional">Sem preferência</option>
+            <option value="Luan">Luan</option>
+            <option value="Andrezza">Andrezza</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="data">Data *</label>
+          <input type="date" id="data">
+        </div>
+
+        <div class="campo">
+          <label for="horario">Horário *</label>
+          <select id="horario">
+            <option value="">— Escolha uma data primeiro —</option>
+            
+          </select>
+          
+          <small class="info-horarios" id="info-horarios"></small>
+        </div>
+
+        <p class="msg-erro" id="mensagem-erro"></p>
+        <p class="msg-sucesso" id="mensagem-sucesso"></p>
+
+        <button type="submit" class="botao botao-largo">
+          Enviar agendamento no WhatsApp
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+  <section class="secao" id="localizacao">
+    <div class="conteudo">
+      <h2 class="titulo-secao">Nossa <span>Localização</span></h2>
+      <p class="subtitulo-secao">Av. Beira Mar, 3820 — Meireles, Fortaleza/CE</p>
+
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps?q=Av.+Beira+Mar,+3820+-+Meireles,+Fortaleza+-+CE&output=embed"
+          title="Mapa — Barbearia do Luan"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <p class="mapa-acoes">
+        <a class="botao"
+           href="https://www.google.com/maps?q=Av.+Beira+Mar,+3820+-+Meireles,+Fortaleza+-+CE"
+           target="_blank">
+          Abrir no Google Maps
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="conteudo rodape-conteudo">
+      <div>
+        <h4>Barbearia do Luan</h4>
+        <p>Av. Beira Mar, 3820 — Meireles<br>Fortaleza / CE</p>
+      </div>
+      <div>
+        <h4>Funcionamento</h4>
+        <p>Segunda: fechado<br>Terça a sexta: 09h às 19h<br>Sábado: 08h às 18h<br>Domingo: 08h às 12h</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>(85) 98920-0913<br>luanlucas1444@gmail.com</p>
+      </div>
+    </div>
+    <p class="rodape-fim">© 2026 Barbearia do Luan — Todos os direitos reservados</p>
+  </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
